@@ -1,6 +1,10 @@
-# pruebas con python
+# Trabajar con numeros enteros
 
 # definicion de las funciones
+def presentacion():
+    print("Programa de ejemplo de operaciones de numeros enteros")
+
+
 def operaciones(dato1,dato2):
     #operaciones basicas
     print("Cálculos realizados")
@@ -28,7 +32,16 @@ def determinaTipo(dato1,dato2):
     print("El dato ",dato1," es de tipo ",type(dato1))
     print("El dato ",dato2," es de tipo ",type(dato2))
 
-print("Hola mundo")
+def parImpar(dato):
+    # comprobación de si el numero es par o impar
+    if(dato%2==0):
+        print("El valor ",dato," es par")
+    else:
+        print("El valor ",dato," es impar")
+
+
+# Inicio del programa
+presentacion()
 
 # entrada de los datos numericos enteros
 print("Introduce dos números enteros ")
@@ -36,7 +49,11 @@ dato1=int(input("Introduce el dato 1 "))
 dato2=int(input("Introduce el dato 2 "))
 
 # determinar el tipo de los datos
-determinaTipo(dato1,dato2)
+#determinaTipo(dato1,dato2)
+
+# control de paridad de los numeros introducidos
+parImpar(dato1)
+parImpar(dato2)
 
 # Compara los dos datos
 compara(dato1,dato2)
