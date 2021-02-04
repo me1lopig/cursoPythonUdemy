@@ -10,3 +10,8 @@ print(tupla1.index(34))
 lista1=list(tupla1)
 print("Lista ",list)
 print("Tupla ",tupla1)
+
+
+
+
+
